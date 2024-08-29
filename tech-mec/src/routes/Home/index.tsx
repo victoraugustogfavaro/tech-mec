@@ -1,6 +1,7 @@
 import Banner from "../../components/Banner/Banner";
 
 function Home() {
+  document.title = "Home | TechMec"
   return (
     <div>
       <Banner

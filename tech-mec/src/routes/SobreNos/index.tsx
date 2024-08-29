@@ -1,6 +1,7 @@
 import Banner from "../../components/Banner/Banner"
 
 function SobreNos(){
+  document.title = "Sobre Nós | TechMec"
   return(
     <div>
       <Banner

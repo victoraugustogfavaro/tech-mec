@@ -1,4 +1,5 @@
 function Participantes(){
+  document.title = "Participantes | TechMec"
   return(
     <div>
 
