@@ -1,6 +1,6 @@
 import { BannerProps } from "../../types";
 import Botao from "../Botao/Botao";
-import Logo from "../../images/logo.png";
+import logo from "../../images/logo.png";
 
 function Banner({ page }: BannerProps) {
   return (
@@ -23,7 +23,7 @@ function Banner({ page }: BannerProps) {
             sempre presente no dia a dia das pessoas.
           </h2>
           <img
-            src={Logo}
+            src={logo}
             alt="Escrita em roxo com Logo circular entre dois textos Tech Mec"
           />
         </div>
