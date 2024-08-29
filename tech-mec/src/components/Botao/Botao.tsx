@@ -1,9 +1,7 @@
-import {BotaoProps} from "../../type.tsx"
+import { BotaoProps } from "../../types.tsx";
 
-function Botao({mensagem}:BotaoProps){
-  return(
-    <button>{mensagem}</button>
-  )
+function Botao({ mensagem }: BotaoProps) {
+  return <button>{mensagem}</button>;
 }
 
-export default Botao
+export default Botao;

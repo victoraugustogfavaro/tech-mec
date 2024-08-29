@@ -8,6 +8,4 @@ export type MenuProps = {
 
 export type BannerProps = {
   page : string
-  titulo: string
-  subtitulo : string
 }

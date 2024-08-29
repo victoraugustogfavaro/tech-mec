@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { MenuProps } from "../../type.tsx";
+import { MenuProps } from "../../types.tsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -43,7 +43,7 @@ export default function Menu({ position }: MenuProps) {
             <ul>
               <li>
                 <Link to="/sobre-nos">
-                  <FontAwesomeIcon icon={faChevronRight} /> Quem somos?
+                  <FontAwesomeIcon icon={faChevronRight} /> Quem Somos?
                 </Link>
               </li>
               <li>
