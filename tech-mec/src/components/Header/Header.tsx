@@ -7,7 +7,7 @@ function Header() {
   return (
     <header>
       <Link to="/"><img src={logo3} alt="Logo circular roxa, simbolizando a TechMec" /></Link>
-      <Menu />
+      <Menu position={"header"}/>
       <Botao mensagem={"Falar com nosso assistente"} />
     </header>
   );
