@@ -1,5 +1,5 @@
 import Menu from "../Menu/Menu";
-import logo2 from "../../images/logo2.png";
+import Logo from "../../images/logo2.png";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -17,7 +17,7 @@ function Footer() {
       <div>
         <Link to="/">
           <img
-            src={logo2}
+            src={Logo}
             alt="Escrita em roxo com Logo circular entre dois textos Tech Mec"
           />
         </Link>
