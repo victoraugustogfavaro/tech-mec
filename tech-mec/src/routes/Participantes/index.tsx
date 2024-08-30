@@ -1,4 +1,3 @@
-import Botao from "../../components/Botao/Botao";
 import Card from "../../components/Card/Card";
 import fotoVictor from "../../images/foto-victor.jpeg";
 import fotoJennifer from "../../images/foto-jennifer.jpeg";
@@ -40,18 +39,11 @@ function Participantes() {
           instagram={"https://www.instagram.com/jenniesuzuki/"}
         />
       </div>
-      <Botao mensagem="Repositório" />
+      <a href="https://github.com/victoraugustogfavaro/tech-mec" target="blank">
+        Repositório
+      </a>
     </div>
   );
 }
 
 export default Participantes;
-
-// export type CardProps = {
-//   foto: string;
-//   nome: string;
-//   rm: string;
-//   git: string;
-//   linkedin: string;
-//   instagram: string;
-// };

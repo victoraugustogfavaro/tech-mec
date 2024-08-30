@@ -1,4 +1,5 @@
 import Banner from "../../components/Banner/Banner";
+import Botao from "../../components/Botao/Botao";
 
 function Home() {
   document.title = "Home | TechMec";
@@ -19,8 +20,8 @@ function Home() {
       </p>
       <p>
         Para utilizar o recurso, você deve clicar em um dos botões que
-        redireciona para o Assistente, fazendo com que possa conversar com o
-        <span>Engrenaldo!</span>
+        redireciona para o Assistente, fazendo com que possa conversar com o{" "}
+        <Botao mensagem={"Engrenaldo"} />
       </p>
       <h2>Seu tempo é valioso!</h2>
       <p>

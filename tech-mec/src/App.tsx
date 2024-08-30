@@ -1,15 +1,17 @@
-import { Outlet } from "react-router-dom"
-import Footer from "./components/Footer/Footer"
-import Header from "./components/Header/Header"
+import { Outlet } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import ChatBot from "./components/ChatBot/ChatBot";
 
-function App(){
-  return(
+function App() {
+  return (
     <div>
-      <Header/>
-      <Outlet/>
-      <Footer/>
+      <Header />
+      <Outlet />
+      <ChatBot/>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

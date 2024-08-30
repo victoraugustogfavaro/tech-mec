@@ -1,5 +1,6 @@
 export type BotaoProps = {
   mensagem: string;
+  functionOnClick?: Function;
 };
 
 export type MenuProps = {
@@ -18,3 +19,7 @@ export type CardProps = {
   linkedin: string;
   instagram: string;
 };
+
+export interface BotaoChatBotProps {
+  mensagem: string;
+}

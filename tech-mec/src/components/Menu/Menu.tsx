@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { MenuProps } from "../../types.tsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import Botao from "../Botao/Botao.tsx";
 
 export default function Menu({ position }: MenuProps) {
   return (
@@ -26,9 +27,8 @@ export default function Menu({ position }: MenuProps) {
             <p>Links Rápidos</p>
             <ul>
               <li>
-                <Link to="">
-                  <FontAwesomeIcon icon={faChevronRight} /> Mecânico Virtual
-                </Link>
+                <FontAwesomeIcon icon={faChevronRight} />{" "}
+                <Botao mensagem={"Mêcanico Virtual"} />
               </li>
               <li>
                 <Link to="/participantes">

@@ -1,5 +1,5 @@
 import { BannerProps } from "../../types";
-import Botao from "../Botao/Botao";
+import Botao from "../Botao/Botao"
 import logo from "../../images/logo.png";
 
 function Banner({ page }: BannerProps) {
