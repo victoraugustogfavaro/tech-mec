@@ -1,6 +1,5 @@
 export type BotaoProps = {
   mensagem: string;
-  functionOnClick?: Function;
 };
 
 export type MenuProps = {
