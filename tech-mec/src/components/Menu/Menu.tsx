@@ -3,20 +3,21 @@ import { MenuProps } from "../../types.tsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import Botao from "../Botao/Botao.tsx";
+import styles from "../../styles/Menu.module.css";
 
 export default function Menu({ position }: MenuProps) {
   return (
     <nav>
       {position === "header" && (
-        <ul>
+        <ul className={styles.menuCabecalho}>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" className={styles.links}>HOME</Link>
           </li>
           <li>
-            <Link to="/sobre-nos">Sobre Nós</Link>
+            <Link to="/sobre-nos" className={styles.links}>SOBRE NÓS</Link>
           </li>
           <li>
-            <Link to="/participantes">Participantes</Link>
+            <Link to="/participantes" className={styles.links}>PARTICIPANTES</Link>
           </li>
         </ul>
       )}

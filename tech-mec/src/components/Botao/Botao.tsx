@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import { BotaoChatBotProps } from "../../types";
+import styles from "../../styles/Botao.module.css";
 
-const BotaoChatBot: React.FC<BotaoChatBotProps> = ({ mensagem }) => {
+const BotaoChatBot: React.FC<BotaoChatBotProps> = ({ mensagem, className }) => {
   const botaoRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
@@ -29,7 +30,10 @@ const BotaoChatBot: React.FC<BotaoChatBotProps> = ({ mensagem }) => {
   }, []);
 
   return (
-    <button ref={botaoRef} className="botao">
+    <button
+      ref={botaoRef}
+      className={`${styles.botao} ${className ? styles[className] : ""}`}
+    >
       {mensagem}
     </button>
   );
