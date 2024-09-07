@@ -1,4 +1,3 @@
-import Banner from "../../components/Banner/BannerHome";
 import BannerSobreNos from "../../components/Banner/BannerSobreNos";
 
 function SobreNos() {

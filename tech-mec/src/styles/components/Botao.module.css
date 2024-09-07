@@ -3,20 +3,19 @@
   color: #fff;
   border: none;
   cursor: pointer;
-  transition: all 0.2 ease;
-  border-radius: 10px; 
+  border-radius: 10px;
   height: 75px;
   font-size: 18px;
   width: 200px;
   padding: 0 10px;
   font-weight: 600;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 .botaoCabecalho:hover {
-    transform: scale(1.1);
-    background-color: #fff;
-    color: #7569c9;
+  transform: scale(1.1);
+  background-color: #fff;
+  color: #7569c9;
 }
 
 .botaoBanner {
@@ -34,6 +33,7 @@
   border: none;
   cursor: pointer;
   transition: all 0.2 ease;
+  font-size: 16px;
 }
 
 .botaoFooter {
@@ -41,7 +41,12 @@
   background-color: #000;
   border: none;
   cursor: pointer;
-  transition: all 0.2 ease;
+  transition: all 0.5s ease;
+  font-size: 16px;
+}
+
+.botaoFooter:hover {
+  color: #7569C9;
 }
 
 .botaoRepositorio {

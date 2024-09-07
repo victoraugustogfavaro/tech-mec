@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "../../styles/components/Menu.module.css";
+import styles from "../../styles/components/MenuHeader.module.css";
 
 function MenuHeader() {
   return (

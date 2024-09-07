@@ -1,0 +1,21 @@
+.links,
+.titulo {
+  color: #fff;
+}
+
+.titulo {
+  font-weight: 600;
+}
+
+.menus {
+  display: flex;
+  gap: 100px;
+}
+
+.links {
+    transition: all 0.5s ease;
+}
+
+.links:hover {
+    color: #7569C9;
+}
