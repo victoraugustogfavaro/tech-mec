@@ -14,11 +14,12 @@
 
 .icones:hover{
     color: #7569C9;
+    transform: scale(1.1);
 }
 
 .containerIcones {
   display: flex;
-  gap: 2%;
+  gap: 5%;
   color: #fff;
 }
 
