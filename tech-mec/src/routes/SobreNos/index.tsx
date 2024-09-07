@@ -1,10 +1,11 @@
-import Banner from "../../components/Banner/Banner";
+import Banner from "../../components/Banner/BannerHome";
+import BannerSobreNos from "../../components/Banner/BannerSobreNos";
 
 function SobreNos() {
   document.title = "Sobre Nós | TechMec";
   return (
     <div>
-      <Banner page="sobre-nos" />
+      <BannerSobreNos />
       <h2>Conheça a Tech Mec</h2>
       <p>
         Bem-vindo à Tech Mec, nossa empresa é dedicada a melhorar o serviço

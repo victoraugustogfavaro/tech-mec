@@ -1,11 +1,11 @@
-import Banner from "../../components/Banner/Banner";
+import BannerHome from "../../components/Banner/BannerHome";
 import Botao from "../../components/Botao/Botao";
 
 function Home() {
   document.title = "Home | TechMec";
   return (
     <div>
-      <Banner page="home" />
+      <BannerHome/>
       <h2>Bem-vindo à sua oficina automotiva de confiança!</h2>
       <p>
         Estamos entusiasmados em apresentar nossa mais recente inovação: o nosso
