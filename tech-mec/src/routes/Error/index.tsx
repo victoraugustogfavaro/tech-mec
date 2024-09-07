@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 
+
 function Error(){
   document.title = "Erro! | TechMec"
   return(

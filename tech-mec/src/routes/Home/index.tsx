@@ -21,7 +21,7 @@ function Home() {
       <p>
         Para utilizar o recurso, você deve clicar em um dos botões que
         redireciona para o Assistente, fazendo com que possa conversar com o{" "}
-        <Botao mensagem={"Engrenaldo"} />
+        <Botao mensagem={"Engrenaldo"} position="engrenaldo" />!
       </p>
       <h2>Seu tempo é valioso!</h2>
       <p>

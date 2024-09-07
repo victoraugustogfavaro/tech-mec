@@ -1,11 +1,7 @@
 export interface BotaoChatBotProps {
   mensagem: string;
-  className?: string;
-}
-
-export type MenuProps = {
   position: string;
-};
+}
 
 export type BannerProps = {
   page: string;

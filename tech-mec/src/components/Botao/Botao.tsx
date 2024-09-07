@@ -1,27 +1,24 @@
 import React, { useEffect, useRef } from "react";
 import { BotaoChatBotProps } from "../../types";
-import styles from "../../styles/Botao.module.css";
+import styles from "../../styles/components/Botao.module.css";
 
-const BotaoChatBot: React.FC<BotaoChatBotProps> = ({ mensagem, className }) => {
+const BotaoChatBot: React.FC<BotaoChatBotProps> = ({ mensagem, position }) => {
   const botaoRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     const handleBotaoClick = () => {
-      // Encontra o botão do chat-bot e tenta clicar nele
       const chatButton = document.querySelector(
         "#WACLauncher__Button"
       ) as HTMLButtonElement;
       if (chatButton) {
-        chatButton.click(); // Simula um clique no botão do chat-bot
+        chatButton.click();
       }
     };
 
-    // Adiciona o listener quando o componente é montado
     if (botaoRef.current) {
       botaoRef.current.addEventListener("click", handleBotaoClick);
     }
 
-    // Remove o listener quando o componente é desmontado
     return () => {
       if (botaoRef.current) {
         botaoRef.current.removeEventListener("click", handleBotaoClick);
@@ -29,13 +26,22 @@ const BotaoChatBot: React.FC<BotaoChatBotProps> = ({ mensagem, className }) => {
     };
   }, []);
 
+  // Mapeamento de classes baseado na prop 'position'
+  const classMap: Record<string, string> = {
+    header: styles.botaoCabecalho,
+    banner: styles.botaoBanner,
+    engrenaldo: styles.botaoEngrenaldo,
+    footer: styles.botaoFooter,
+  };
+
+  // Classe padrão caso 'position' não seja fornecida ou não seja reconhecida
+  const buttonClass = classMap[position || ""] || styles.botaoPadrao;
+
   return (
-    <button
-      ref={botaoRef}
-      className={`${styles.botao} ${className ? styles[className] : ""}`}
-    >
+    <button ref={botaoRef} className={buttonClass}>
       {mensagem}
     </button>
   );
 };
+
 export default BotaoChatBot;

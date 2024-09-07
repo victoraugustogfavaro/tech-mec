@@ -12,7 +12,7 @@ function Banner({ page }: BannerProps) {
             Simples e rápido! Com o nosso Assistente Virtual, asseguramos a
             saúde do seu automóvel sem surpresas para seu bolso.
           </h2>
-          <Botao mensagem={"Assistente Virtual"} />
+          <Botao mensagem={"Assistente Virtual"} position="banner" />
         </div>
       )}
       {page === "sobre-nos" && (

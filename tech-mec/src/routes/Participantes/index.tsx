@@ -2,6 +2,7 @@ import Card from "../../components/Card/Card";
 import fotoVictor from "../../images/foto-victor.jpeg";
 import fotoJennifer from "../../images/foto-jennifer.jpeg";
 import fotoFelipe from "../../images/foto-felipe.jpeg";
+import styles from "../../styles/components/Botao.module.css"
 
 function Participantes() {
   document.title = "Participantes | TechMec";
@@ -39,7 +40,7 @@ function Participantes() {
           instagram={"https://www.instagram.com/jenniesuzuki/"}
         />
       </div>
-      <a href="https://github.com/victoraugustogfavaro/tech-mec" target="blank">
+      <a href="https://github.com/victoraugustogfavaro/tech-mec" target="blank" className={styles.botaoRepositorio}>
         Repositório
       </a>
     </div>

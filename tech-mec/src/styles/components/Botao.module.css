@@ -1,0 +1,52 @@
+.botaoCabecalho {
+  background-color: #7569c9;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2 ease;
+  border-radius: 10px; 
+  height: 75px;
+  font-size: 18px;
+  width: 200px;
+  padding: 0 10px;
+  font-weight: 600;
+  transition: all 1s ease;
+}
+
+.botaoCabecalho:hover {
+    transform: scale(1.1);
+    background-color: #fff;
+    color: #7569c9;
+}
+
+.botaoBanner {
+  background-color: #fff;
+  color: #7569c9;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.2 ease;
+}
+
+.botaoEngrenaldo {
+  background-color: #fff;
+  color: #7569c9;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2 ease;
+}
+
+.botaoFooter {
+  color: #fff;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2 ease;
+}
+
+.botaoRepositorio {
+  color: #fff;
+  background-color: #151f42;
+  border: 2px solid #fff;
+  transition: all 0.2 ease;
+}
