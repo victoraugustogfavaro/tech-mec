@@ -3,16 +3,17 @@ import fotoVictor from "../../images/foto-victor.jpeg";
 import fotoJennifer from "../../images/foto-jennifer.jpeg";
 import fotoFelipe from "../../images/foto-felipe.jpeg";
 import styles from "../../styles/components/Botao.module.css"
+import stylesRoutes from "../../styles/routes/Participantes.module.css"
 
 function Participantes() {
   document.title = "Participantes | TechMec";
   return (
-    <main>
-      <div>
-        <h1>Participantes</h1>
-        <h2>1TDSPG</h2>
+    <main className={stylesRoutes.conteudo}>
+      <div className={stylesRoutes.titulos}>
+        <h1 className={stylesRoutes.titulo}>Participantes</h1>
+        <h2 className={stylesRoutes.subtitulo}>1TDSPG</h2>
       </div>
-      <div>
+      <div className={stylesRoutes.cards}>
         <Card
           foto={fotoVictor}
           nome={"Victor Fávaro"}
@@ -39,7 +40,7 @@ function Participantes() {
           linkedin={"https://www.linkedin.com/in/jennifer-kaori-suzuki/"}
           instagram={"https://www.instagram.com/jenniesuzuki/"}
         />
-      </div>
+        </div>
       <a href="https://github.com/victoraugustogfavaro/tech-mec" target="blank" className={styles.botaoRepositorio}>
         Repositório
       </a>

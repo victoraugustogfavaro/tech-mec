@@ -45,6 +45,12 @@
   cursor: pointer;
   transition: all 0.2 ease;
   font-size: 16px;
+  transition: all 0.5s ease;
+}
+
+.botaoEngrenaldo:hover {
+  text-decoration: underline;
+  font-size: 1.125rem;
 }
 
 .botaoFooter {
@@ -62,8 +68,25 @@
 }
 
 .botaoRepositorio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   background-color: #151f42;
   border: 2px solid #fff;
   transition: all 0.2 ease;
+  width: 250px;
+  height: 75px;
+  border-radius: 13px;
+  border: 2px solid #fff;
+  font-weight: 600;
+  transition: all 0.5s ease;
+  margin: 3% auto;
+  font-size: 1.2rem;
+}
+
+.botaoRepositorio:hover {
+  color: #151f42;
+  background-color: #fff;
+  transform: scale(1.1);
 }

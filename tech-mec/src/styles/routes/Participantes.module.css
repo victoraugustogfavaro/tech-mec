@@ -1,0 +1,31 @@
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8%;
+}
+
+.conteudo {
+  background: linear-gradient(to bottom, #151f42 30%, #7569c9 100%);
+  min-height: 75vh;
+  padding: 25px;
+}
+
+.titulos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin: 22px 0;
+}
+
+.titulo {
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+.subtitulo {
+  font-weight: normal;
+  font-size: 1.3rem;
+}
