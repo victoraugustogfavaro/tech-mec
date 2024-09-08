@@ -1,4 +1,5 @@
 import logo from "../../images/logo.png";
+import styles from "../../styles/components/BannerSobreNos.module.css"
 
 function BannerSobreNos() {
   return (
