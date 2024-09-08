@@ -5,7 +5,7 @@ function BannerHome() {
   return (
     <section className={styles.banner}>
       <h1 className={styles.titulo}>
-        O lugar para quem gosta de cuidar do carro
+        O lugar para quem gosta de cuidar do carro.
       </h1>
       <h2 className={styles.subtitulo}>
         <span className={styles.negrito}>Simples e rápido!</span> Com o nosso

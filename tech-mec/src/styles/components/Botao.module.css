@@ -43,14 +43,14 @@
   color: #7569c9;
   border: none;
   cursor: pointer;
-  transition: all 0.2 ease;
-  font-size: 16px;
+  font-size: 1.2rem;
+  font-weight: 600;
   transition: all 0.5s ease;
 }
 
 .botaoEngrenaldo:hover {
   text-decoration: underline;
-  font-size: 1.125rem;
+  font-size: 1.3rem;
 }
 
 .botaoFooter {
