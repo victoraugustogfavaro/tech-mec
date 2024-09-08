@@ -1,0 +1,33 @@
+body {
+  background-color: #151f42;
+}
+
+.conteudo {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+  gap: 10px;
+}
+
+.botao {
+  color: #fff;
+  background-color: #7569c9;
+  width: 200px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+
+.botao:hover{
+    background-color: #fff;
+    color: #7569c9;
+    transform: scale(1.1);
+}
