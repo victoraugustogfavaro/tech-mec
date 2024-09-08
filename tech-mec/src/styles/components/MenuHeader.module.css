@@ -12,6 +12,10 @@
 }
 
 .links:hover {
-  color: #7569c9;
   font-size: 1.125rem;
+}
+
+.linkAtivo {
+  color: #7569c9
+  ;
 }
