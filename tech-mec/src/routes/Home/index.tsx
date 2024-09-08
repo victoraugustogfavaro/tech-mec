@@ -4,7 +4,7 @@ import Botao from "../../components/Botao/Botao";
 function Home() {
   document.title = "Home | TechMec";
   return (
-    <div>
+    <main>
       <BannerHome/>
       <h2>Bem-vindo à sua oficina automotiva de confiança!</h2>
       <p>
@@ -34,7 +34,7 @@ function Home() {
         condições, de forma simples e eficaz. Confie no cuidado da Porto Autos
         para todas suas necessidades automotivas.
       </p>
-    </div>
+    </main>
   );
 }
 

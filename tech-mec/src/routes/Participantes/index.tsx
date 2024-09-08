@@ -7,7 +7,7 @@ import styles from "../../styles/components/Botao.module.css"
 function Participantes() {
   document.title = "Participantes | TechMec";
   return (
-    <div>
+    <main>
       <div>
         <h1>Participantes</h1>
         <h2>1TDSPG</h2>
@@ -43,7 +43,7 @@ function Participantes() {
       <a href="https://github.com/victoraugustogfavaro/tech-mec" target="blank" className={styles.botaoRepositorio}>
         Repositório
       </a>
-    </div>
+    </main>
   );
 }
 

@@ -3,7 +3,7 @@ import BannerSobreNos from "../../components/Banner/BannerSobreNos";
 function SobreNos() {
   document.title = "Sobre Nós | TechMec";
   return (
-    <div>
+    <main>
       <BannerSobreNos />
       <h2>Conheça a Tech Mec</h2>
       <p>
@@ -48,7 +48,7 @@ function SobreNos() {
       <p>
         Junte-se a nós nesta jornada rumo ao futuro dos serviços automotivos!
       </p>
-    </div>
+    </main>
   );
 }
 

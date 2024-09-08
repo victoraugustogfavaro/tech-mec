@@ -8,7 +8,7 @@ import { CardProps } from "../../types";
 
 function Card({ foto, nome, rm, git, linkedin, instagram }: CardProps) {
   return (
-    <div>
+    <section>
       <img src={foto} alt={nome} />
       <p>{nome}</p>
       <p>RM: {rm}</p>
@@ -21,7 +21,7 @@ function Card({ foto, nome, rm, git, linkedin, instagram }: CardProps) {
       <a href={instagram} target="blank">
         <FontAwesomeIcon icon={faInstagramSquare} size="3x" />
       </a>
-    </div>
+    </section>
   );
 }
 

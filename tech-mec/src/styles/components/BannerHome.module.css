@@ -1,5 +1,5 @@
-.bannerHome{
-    min-height: 270px;
+.banner{
+    height: 300px;
     background: linear-gradient(to bottom, #151F42 30%, #7569C9 100%);
     color: #fff;
     text-align: center;
@@ -7,17 +7,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 14px 0;
+    gap: 16px 0;
 }
 
-.tituloBanner{
+.titulo{
     font-size: 2.375rem;
     font-weight: 800;
     width: 520px;
 
 }
 
-.subtituloBanner{
+.subtitulo{
     font-size: 1.125rem;
     font-weight: normal;
     width: 650px;
