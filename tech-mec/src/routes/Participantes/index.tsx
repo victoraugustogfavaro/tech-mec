@@ -8,7 +8,7 @@ import stylesRoutes from "../../styles/routes/Participantes.module.css"
 function Participantes() {
   document.title = "Participantes | TechMec";
   return (
-    <main className={stylesRoutes.conteudo}>
+    <section className={stylesRoutes.conteudo}>
       <div className={stylesRoutes.titulos}>
         <h1 className={stylesRoutes.titulo}>Participantes</h1>
         <h2 className={stylesRoutes.subtitulo}>1TDSPG</h2>
@@ -44,7 +44,7 @@ function Participantes() {
       <a href="https://github.com/victoraugustogfavaro/tech-mec" target="blank" className={styles.botaoRepositorio}>
         Repositório
       </a>
-    </main>
+    </section>
   );
 }
 

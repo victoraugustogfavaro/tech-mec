@@ -8,8 +8,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Outlet />
-      <ChatBot />
+      <main>
+        <Outlet />
+        <ChatBot />
+      </main>
       <Footer />
     </div>
   );

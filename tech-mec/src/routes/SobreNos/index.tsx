@@ -4,7 +4,7 @@ import styles from "../../styles/routes/HomeAndSobreNos.module.css";
 function SobreNos() {
   document.title = "Sobre Nós | TechMec";
   return (
-    <main>
+    <section>
       <BannerSobreNos />
       <div className={styles.conteudo}>
         <h2 className={styles.titulo}>Conheça a Tech Mec</h2>
@@ -74,7 +74,7 @@ function SobreNos() {
           </span>
         </p>
       </div>
-    </main>
+    </section>
   );
 }
 

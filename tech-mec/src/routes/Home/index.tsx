@@ -5,7 +5,7 @@ import styles from "../../styles/routes/HomeAndSobreNos.module.css";
 function Home() {
   document.title = "Home | TechMec";
   return (
-    <main>
+    <main className={styles.main}>
       <BannerHome />
       <div className={styles.conteudo}>
         <h2 className={styles.titulo}>
