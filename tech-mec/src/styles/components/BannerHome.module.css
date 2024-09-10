@@ -30,7 +30,7 @@
 /* Responsividade */
 @media (max-width: 750px) {
     .banner {
-        height: 340px;
+        height: 360px;
     }
 
     .titulo {
@@ -39,5 +39,15 @@
 
     .subtitulo {
         width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .subtitulo {
+        width: 300px;
+    }
+
+    .banner {
+        height: 389px;
     }
 }

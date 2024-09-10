@@ -93,3 +93,15 @@
     gap: 7px;
   }
 }
+
+@media (max-width: 450px) {
+  .hamburger {
+    font-size: 32px;
+    margin-right: 15px;
+  }
+
+  .menuOpen {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}

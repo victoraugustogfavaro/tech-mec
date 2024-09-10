@@ -90,3 +90,11 @@
   background-color: #fff;
   transform: scale(1.1);
 }
+
+/* Responsividade */
+@media (max-width: 450px) {
+  .botaoCabecalho {
+    width: 120px;
+    font-size: 0.9rem;
+  }
+}

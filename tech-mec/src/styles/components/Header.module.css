@@ -14,3 +14,14 @@
 .logo:hover {
   transform: scale(1.2);
 }
+
+/* Responsividade */
+@media (max-width: 388px) {
+  .logo {
+    width: 85px;
+  }
+
+  .cabecalho {
+    justify-content: center;
+  }
+}

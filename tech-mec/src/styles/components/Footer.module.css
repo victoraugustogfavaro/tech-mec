@@ -68,3 +68,18 @@
     margin-right: 0px;
   }
 }
+
+@media (max-width: 368px) {
+  .rodape {
+    width: 100%;
+    gap: 25px;
+  }
+
+  .logo{
+    width: 300px;
+  }
+
+  .icones {
+    width: 40px;
+  }
+}
