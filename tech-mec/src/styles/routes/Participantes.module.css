@@ -8,7 +8,7 @@
 .conteudo {
   background: linear-gradient(to bottom, #151f42 30%, #7569c9 100%);
   min-height: 75vh;
-  padding: 60px 0;
+  padding: 30px 0;
 }
 
 .titulos {
@@ -28,4 +28,13 @@
 .subtitulo {
   font-weight: normal;
   font-size: 1.3rem;
+}
+
+/* Responsividade */
+@media (max-width: 1050px) {
+  .cards {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 60px;
+  }
 }
