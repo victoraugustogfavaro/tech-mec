@@ -26,3 +26,18 @@
 .negrito {
     font-weight: 600;
 }
+
+/* Responsividade */
+@media (max-width: 750px) {
+    .banner {
+        height: 340px;
+    }
+
+    .titulo {
+       width: 300px;
+    }
+
+    .subtitulo {
+        width: 400px;
+    }
+}

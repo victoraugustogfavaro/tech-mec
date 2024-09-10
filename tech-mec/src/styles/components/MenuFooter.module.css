@@ -20,3 +20,28 @@
   font-size: 1.125rem;
     color: #7569C9;
 }
+
+/* Responsividade */
+@media (max-width: 1250px) {
+  .menus {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .menus {
+    gap: 300px;
+  }
+}
+
+@media (max-width: 880px) {
+  .menus {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 390px) {
+  .menus {
+    gap: 40px;
+  }
+}

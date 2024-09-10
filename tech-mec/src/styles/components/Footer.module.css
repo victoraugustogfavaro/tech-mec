@@ -12,9 +12,9 @@
   transition: all 0.5s ease;
 }
 
-.icones:hover{
-    color: #7569C9;
-    transform: scale(1.1);
+.icones:hover {
+  color: #7569c9;
+  transform: scale(1.1);
 }
 
 .containerIcones {
@@ -45,4 +45,26 @@
 
 .logo:hover {
   transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 1250px) {
+  .logoCopyright,
+  .portoRedes {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .rodape {
+    flex-direction: column;
+    gap: 40px;
+    height: auto;
+    padding: 5%;
+  }
+
+  .logoCopyright,
+  .portoRedes {
+    margin-right: 0px;
+  }
 }
