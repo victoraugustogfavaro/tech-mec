@@ -1,47 +1,59 @@
-import React, { useEffect, useRef } from "react";
+import { useCallback, useRef, useState } from "react";
+import {
+  WebChatContainer,
+  WebChatInstance,
+  WebChatConfig,
+} from "@ibm-watson/assistant-web-chat-react";
 import { BotaoChatBotProps } from "../../types";
 import styles from "../../styles/components/Botao.module.css";
 
-const BotaoChatBot: React.FC<BotaoChatBotProps> = ({ mensagem, position }) => {
+// Definindo o tipo corretamente para o webChatOptions
+const webChatOptions: WebChatConfig = {
+  integrationID: "814fa5a5-953a-482f-aee2-2cb5d9d87728",
+  region: "us-south", // Valor corretamente tipado
+  serviceInstanceID: "8a23610e-7cde-411e-98a0-a2a5e0839572",
+  locale: "pt-br",
+};
+
+const classMap: Record<string, string> = {
+  header: styles.botaoCabecalho,
+  banner: styles.botaoBanner,
+  engrenaldo: styles.botaoEngrenaldo,
+  footer: styles.botaoFooter,
+};
+
+function BotaoChatBot({ mensagem, position }: BotaoChatBotProps) {
   const botaoRef = useRef<HTMLButtonElement>(null);
+  const [chatInstance, setChatInstance] = useState<WebChatInstance | null>(
+    null
+  );
 
-  useEffect(() => {
-    const handleBotaoClick = () => {
-      const chatButton = document.querySelector(
-        "#WACLauncher__Button"
-      ) as HTMLButtonElement;
-      if (chatButton) {
-        chatButton.click();
-      }
-    };
-
-    if (botaoRef.current) {
-      botaoRef.current.addEventListener("click", handleBotaoClick);
-    }
-
-    return () => {
-      if (botaoRef.current) {
-        botaoRef.current.removeEventListener("click", handleBotaoClick);
-      }
-    };
-  }, []);
-
-  // Mapeamento de classes baseado na prop 'position'
-  const classMap: Record<string, string> = {
-    header: styles.botaoCabecalho,
-    banner: styles.botaoBanner,
-    engrenaldo: styles.botaoEngrenaldo,
-    footer: styles.botaoFooter,
+  // A função agora é async e retorna uma Promise<void>
+  const handleBeforeRender = async (
+    instance: WebChatInstance
+  ): Promise<void> => {
+    setChatInstance(instance);
   };
 
-  // Classe padrão caso 'position' não seja fornecida ou não seja reconhecida
+  const toggleWebChat = useCallback(() => {
+    if (chatInstance) {
+      chatInstance.toggleOpen();
+    }
+  }, [chatInstance]);
+
   const buttonClass = classMap[position || ""] || styles.botaoPadrao;
 
   return (
-    <button ref={botaoRef} className={buttonClass}>
-      {mensagem}
-    </button>
+    <>
+      <button ref={botaoRef} className={buttonClass} onClick={toggleWebChat}>
+        {mensagem}
+      </button>
+      <WebChatContainer
+        config={webChatOptions}
+        onBeforeRender={handleBeforeRender}
+      />
+    </>
   );
-};
+}
 
 export default BotaoChatBot;
