@@ -1,0 +1,85 @@
+.rodape {
+  display: flex;
+  background-color: #000;
+  color: #fff;
+  height: 225px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.icones {
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.icones:hover {
+  color: #7569c9;
+  transform: scale(1.1);
+}
+
+.containerIcones {
+  display: flex;
+  gap: 5%;
+  color: #fff;
+}
+
+.logoCopyright,
+.portoRedes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 45px;
+}
+
+.tituloPortoRedes {
+  font-weight: 600;
+}
+
+.copyright {
+  font-weight: 200;
+}
+
+.logo {
+  transition: all 0.5s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 1250px) {
+  .logoCopyright,
+  .portoRedes {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .rodape {
+    flex-direction: column;
+    gap: 40px;
+    height: auto;
+    padding: 5%;
+  }
+
+  .logoCopyright,
+  .portoRedes {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 368px) {
+  .rodape {
+    width: 100%;
+    gap: 25px;
+  }
+
+  .logo{
+    width: 300px;
+  }
+
+  .icones {
+    width: 40px;
+  }
+}

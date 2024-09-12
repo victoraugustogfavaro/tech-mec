@@ -1,0 +1,54 @@
+.links,
+.titulo {
+  color: #fff;
+}
+
+.titulo {
+  font-weight: 600;
+}
+
+.menus {
+  display: flex;
+  gap: 100px;
+}
+
+.links {
+  transition: all 0.5s ease;
+}
+
+.links:hover {
+  font-size: 1.125rem;
+  color: #7569c9;
+}
+
+/* Responsividade */
+@media (max-width: 1250px) {
+  .menus {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .menus {
+    gap: 300px;
+  }
+}
+
+@media (max-width: 880px) {
+  .menus {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .menus {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 368px) {
+  .menus {
+    gap: 25px;
+    flex-direction: column;
+  }
+}

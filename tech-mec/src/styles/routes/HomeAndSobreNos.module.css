@@ -1,0 +1,19 @@
+.conteudo {
+    width: 70%;
+    margin: 4% auto;
+}
+
+.titulo {
+    color: #7569C9;
+    margin-top: 30px;
+    font-size: 1.7rem;
+}
+
+.texto{
+    margin-top: 14px;
+    font-size: 1.2rem;
+}
+
+.negrito {
+    font-weight: 600;
+}

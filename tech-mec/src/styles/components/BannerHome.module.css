@@ -1,0 +1,53 @@
+.banner{
+    height: 300px;
+    background: linear-gradient(to bottom, #151F42 30%, #7569C9 100%);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px 0;
+}
+
+.titulo{
+    font-size: 2.375rem;
+    font-weight: 800;
+    width: 520px;
+
+}
+
+.subtitulo{
+    font-size: 1.125rem;
+    font-weight: normal;
+    width: 650px;
+}
+
+.negrito {
+    font-weight: 600;
+}
+
+/* Responsividade */
+@media (max-width: 750px) {
+    .banner {
+        height: 360px;
+    }
+
+    .titulo {
+       width: 300px;
+    }
+
+    .subtitulo {
+        width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .subtitulo {
+        width: 300px;
+    }
+
+    .banner {
+        height: 389px;
+    }
+}
