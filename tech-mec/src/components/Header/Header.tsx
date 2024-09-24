@@ -1,21 +1,18 @@
+import Link from "next/link";
 import logo from "../../images/logo3.png";
 import Botao from "../Botao/Botao";
-import { Link } from "react-router-dom";
-import styles from "../../styles/components/Header.module.css";
 import MenuHeader from "../Menu/MenuHeader";
+import Image from "next/image";
 
 function Header() {
   return (
-    <header className={styles.cabecalho}>
-      <Link to="/">
-        <img
-          src={logo}
-          alt="Logo circular roxa, simbolizando a TechMec"
-          className={styles.logo}
-        />
+    <header>
+      <Link href="/home">
+      <Image
+        src={logo} alt="Logo circular roxa, simbolizando a TechMec" />
       </Link>
-      <MenuHeader/>
-      <Botao position="header" mensagem={"Falar com nosso assistente"} />
+      <MenuHeader />
+      <Botao mensagem={"Falar com nosso assistente"} />
     </header>
   );
 }
