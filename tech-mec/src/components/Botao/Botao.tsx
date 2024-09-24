@@ -1,11 +1,12 @@
+"use client"; // Adiciona esta linha no topo do arquivo
+
 import { useCallback, useRef, useState } from "react";
 import {
   WebChatContainer,
   WebChatInstance,
   WebChatConfig,
 } from "@ibm-watson/assistant-web-chat-react";
-import { BotaoChatBotProps } from "../../types";
-import styles from "../../styles/components/Botao.module.css";
+import type { BotaoChatBot } from "../../types";
 
 // Definindo o tipo corretamente para o webChatOptions
 const webChatOptions: WebChatConfig = {
@@ -15,14 +16,7 @@ const webChatOptions: WebChatConfig = {
   locale: "pt-br",
 };
 
-const classMap: Record<string, string> = {
-  header: styles.botaoCabecalho,
-  banner: styles.botaoBanner,
-  engrenaldo: styles.botaoEngrenaldo,
-  footer: styles.botaoFooter,
-};
-
-function BotaoChatBot({ mensagem, position }: BotaoChatBotProps) {
+function BotaoChatBot({ mensagem }: BotaoChatBot) {
   const botaoRef = useRef<HTMLButtonElement>(null);
   const [chatInstance, setChatInstance] = useState<WebChatInstance | null>(
     null
@@ -41,11 +35,9 @@ function BotaoChatBot({ mensagem, position }: BotaoChatBotProps) {
     }
   }, [chatInstance]);
 
-  const buttonClass = classMap[position || ""] || styles.botaoPadrao;
-
   return (
     <>
-      <button ref={botaoRef} className={buttonClass} onClick={toggleWebChat}>
+      <button ref={botaoRef} onClick={toggleWebChat}>
         {mensagem}
       </button>
       <WebChatContainer
