@@ -1,9 +1,10 @@
+import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "TechMec",
   description: "Inovando o presente, dirigindo o futuro.",
-  
 };
 
 export const viewport = {
@@ -18,7 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
