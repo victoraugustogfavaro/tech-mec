@@ -1,14 +1,42 @@
 .hamburger {
+  position: relative;
   display: none;
+  z-index: 1000;
+  opacity: 50%;
+  transition: 0.3s all ease-in-out;
+}
+
+.separadorActive {
+  position: relative;
+  margin-top: 110px;
+  width: 38vw;
+}
+
+.separador {
+  display: none;
+}
+
+.divMenu {
+  border-radius: 5px;
+  height: 35%;
+  gap: 1em;
+  background-color: #180d2b;
+  opacity: 85%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s all ease-in-out;
 }
 
 .menu {
   display: flex;
   gap: 70px;
-  margin-left: 90px;
 }
 
 .links {
+  position: relative;
   font-weight: 600;
   color: #fff;
   padding: 28px;
@@ -90,7 +118,9 @@
   .menuOpen {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    align-items: center;
+    gap: 40px;
+    margin-top: 0.7em;
   }
 }
 

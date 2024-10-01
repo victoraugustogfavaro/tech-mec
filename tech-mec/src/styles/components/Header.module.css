@@ -16,12 +16,9 @@
 }
 
 /* Responsividade */
-@media (max-width: 388px) {
-  .logo {
-    width: 85px;
-  }
-
+@media (max-width: 750px) {
   .cabecalho {
-    justify-content: center;
+    gap: 20%;
+    justify-content: space-around;
   }
 }

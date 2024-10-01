@@ -92,6 +92,12 @@
 }
 
 /* Responsividade */
+@media (max-width: 750px) {
+  .botaoCabecalho {
+    display: none;
+  }
+}
+
 @media (max-width: 450px) {
   .botaoCabecalho {
     width: 120px;
