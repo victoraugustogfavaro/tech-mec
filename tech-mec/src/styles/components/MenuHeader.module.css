@@ -9,7 +9,7 @@
 .separadorActive {
   position: relative;
   margin-top: 110px;
-  width: 38vw;
+  width: 200px;
 }
 
 .separador {
@@ -18,10 +18,10 @@
 
 .divMenu {
   border-radius: 5px;
-  height: 35%;
+  height: 340px;
   gap: 1em;
   background-color: #180d2b;
-  opacity: 85%;
+  opacity: 95%;
   position: absolute;
   top: 0;
   right: 0;
@@ -134,5 +134,9 @@
   .menuOpen {
     align-items: flex-start;
     justify-content: flex-start;
+  }
+
+  .separadorActive {
+    width: 175px;
   }
 }
