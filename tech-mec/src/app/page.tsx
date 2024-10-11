@@ -1,7 +1,5 @@
-function Login(){
-  <main>
-
-  </main>
+function Home() {
+  <main></main>;
 }
 
-export default Login
+export default Home;

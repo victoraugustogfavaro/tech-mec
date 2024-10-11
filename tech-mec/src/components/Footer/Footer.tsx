@@ -1,21 +1,21 @@
-import logo from "../../images/logo2.png";
-import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookSquare,
   faInstagramSquare,
   faLinkedin,
   faSquareYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-import MenuFooter from "../Menu/MenuFooter";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
+import Link from "next/link";
+import logo from "../../images/logo2.png";
+import MenuFooter from "../Menu/MenuFooter";
 
 function Footer() {
   return (
     <footer>
       <MenuFooter />
       <div>
-        <Link href="/home">
+        <Link href="/">
           <Image
             src={logo}
             alt="Escrita em roxo com Logo circular entre dois textos Tech Mec"

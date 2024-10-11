@@ -5,7 +5,7 @@ function MenuHeader() {
     <nav>
       <ul>
         <li>
-          <Link href="/home">HOME</Link>
+          <Link href="/">HOME</Link>
         </li>
         <li>
           <Link href="/sobre-nos">SOBRE NÓS</Link>
