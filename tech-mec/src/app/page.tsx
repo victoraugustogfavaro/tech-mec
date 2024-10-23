@@ -1,5 +1,7 @@
 function Home() {
-  <main></main>;
+  <section>
+    
+  </section>;
 }
 
 export default Home;

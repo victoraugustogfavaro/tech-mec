@@ -1,7 +1,7 @@
 function Cadastro(){
-    <main>
+    <section>
 
-    </main>
+    </section>
 }
 
 export default Cadastro

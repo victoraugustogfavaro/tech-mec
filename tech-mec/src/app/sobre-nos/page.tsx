@@ -1,7 +1,7 @@
 function SobreNos(){
-    <main>
+    <section>
 
-    </main>
+    </section>
 }
 
 export default SobreNos

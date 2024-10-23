@@ -1,7 +1,7 @@
 function Participantes(){
-    <main>
+    <section>
 
-    </main>
+    </section>
 }
 
 export default Participantes
