@@ -27,19 +27,19 @@ function Footer() {
         <p>Acompanhe a Porto nas redes sociais</p>
         <div>
           <a href="https://www.facebook.com/porto/?locale=pt_BR" target="blank">
-            <FontAwesomeIcon icon={faFacebookSquare} size="1x" />
+            <FontAwesomeIcon icon={faFacebookSquare} width={40} />
           </a>
           <a href="https://www.instagram.com/porto/" target="blank">
-            <FontAwesomeIcon icon={faInstagramSquare} size="1x" />
+            <FontAwesomeIcon icon={faInstagramSquare} width={40} />
           </a>
           <a
             href="https://www.linkedin.com/company/porto/?originalSubdomain=br"
             target="blank"
           >
-            <FontAwesomeIcon icon={faLinkedin} size="1x" />
+            <FontAwesomeIcon icon={faLinkedin} width={40} />
           </a>
           <a href="https://www.youtube.com/portoseguro" target="blank">
-            <FontAwesomeIcon icon={faSquareYoutube} size="1x" />
+            <FontAwesomeIcon icon={faSquareYoutube} width={40} />
           </a>
         </div>
       </div>

@@ -9,12 +9,12 @@ function MenuFooter() {
       <ul>
         <li>Links Rápidos</li>
         <li>
-          <FontAwesomeIcon icon={faChevronRight} />{" "}
+          <FontAwesomeIcon icon={faChevronRight} width={8} />
           <BotaoChatBot mensagem={"Mêcanico Virtual"}/>
         </li>
         <li>
           <Link href="/participantes">
-            <FontAwesomeIcon icon={faChevronRight} /> Participantes
+            <FontAwesomeIcon icon={faChevronRight} width={8} /> Participantes
           </Link>
         </li>
       </ul>
@@ -23,12 +23,12 @@ function MenuFooter() {
         <li>Sobre Nós</li>
         <li>
           <Link href="/sobre-nos">
-            <FontAwesomeIcon icon={faChevronRight} /> Quem Somos?
+            <FontAwesomeIcon icon={faChevronRight} width={8} /> Quem Somos?
           </Link>
         </li>
         <li>
           <Link href="/sobre-nos">
-            <FontAwesomeIcon icon={faChevronRight} /> Nossa História
+            <FontAwesomeIcon icon={faChevronRight} width={8} /> Nossa História
           </Link>
         </li>
       </ul>
