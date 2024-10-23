@@ -1,9 +1,10 @@
+import "@/app/globals.css";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "TechMec",
+  title: "Home | TechMec",
   description: "Inovando o presente, dirigindo o futuro.",
 };
 
