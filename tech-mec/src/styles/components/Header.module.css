@@ -16,6 +16,7 @@
 }
 
 /* Responsividade */
+<<<<<<< HEAD
 @media (max-width: 388px) {
   .logo {
     width: 85px;
@@ -23,5 +24,11 @@
 
   .cabecalho {
     justify-content: center;
+=======
+@media (max-width: 750px) {
+  .cabecalho {
+    gap: 20%;
+    justify-content: space-around;
+>>>>>>> main
   }
 }

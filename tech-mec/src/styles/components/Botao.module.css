@@ -92,9 +92,22 @@
 }
 
 /* Responsividade */
+<<<<<<< HEAD
+=======
+@media (max-width: 750px) {
+  .botaoCabecalho {
+    display: none;
+  }
+}
+
+>>>>>>> main
 @media (max-width: 450px) {
   .botaoCabecalho {
     width: 120px;
     font-size: 0.9rem;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> main

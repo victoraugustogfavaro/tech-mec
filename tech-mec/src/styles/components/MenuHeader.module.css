@@ -1,5 +1,37 @@
 .hamburger {
+<<<<<<< HEAD
   display: none;
+=======
+  position: relative;
+  display: none;
+  z-index: 1000;
+  opacity: 50%;
+  transition: 0.3s all ease-in-out;
+}
+
+.separadorActive {
+  position: relative;
+  margin-top: 110px;
+  width: 200px;
+}
+
+.separador {
+  display: none;
+}
+
+.divMenu {
+  border-radius: 5px;
+  height: 340px;
+  gap: 1em;
+  background-color: #180d2b;
+  opacity: 95%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s all ease-in-out;
+>>>>>>> main
 }
 
 .menu {
@@ -9,6 +41,10 @@
 }
 
 .links {
+<<<<<<< HEAD
+=======
+  position: relative;
+>>>>>>> main
   font-weight: 600;
   color: #fff;
   padding: 28px;
@@ -90,7 +126,13 @@
   .menuOpen {
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     gap: 7px;
+=======
+    align-items: center;
+    gap: 40px;
+    margin-top: 0.7em;
+>>>>>>> main
   }
 }
 
@@ -104,4 +146,11 @@
     align-items: flex-start;
     justify-content: flex-start;
   }
+<<<<<<< HEAD
+=======
+
+  .separadorActive {
+    width: 175px;
+  }
+>>>>>>> main
 }

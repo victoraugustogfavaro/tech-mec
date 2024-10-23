@@ -15,6 +15,7 @@ function MenuHeader() {
       <button className={styles.hamburger} onClick={toggleMenu}>
         <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
       </button>
+<<<<<<< HEAD
       <ul className={`${styles.menu} ${isMenuOpen ? styles.menuOpen : ""}`}>
         <li>
           <Link
@@ -50,8 +51,54 @@ function MenuHeader() {
           </Link>
         </li>
       </ul>
+=======
+      <div className={isMenuOpen ? styles.divMenu : ""}>
+        <hr
+          className={isMenuOpen ? styles.separadorActive : styles.separador}
+        ></hr>
+        <ul className={`${styles.menu} ${isMenuOpen ? styles.menuOpen : ""}`}>
+          <li>
+            <Link
+              to="/"
+              className={`${styles.links} ${
+                location.pathname === "/" ? styles.linkAtivo : ""
+              }`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              HOME
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/sobre-nos"
+              className={`${styles.links} ${
+                location.pathname === "/sobre-nos" ? styles.linkAtivo : ""
+              }`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              SOBRE NÓS
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/participantes"
+              className={`${styles.links} ${
+                location.pathname === "/participantes" ? styles.linkAtivo : ""
+              }`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              PARTICIPANTES
+            </Link>
+          </li>
+        </ul>
+      </div>
+>>>>>>> main
     </nav>
   );
 }
 
+<<<<<<< HEAD
 export default MenuHeader;
+=======
+export default MenuHeader;
+>>>>>>> main
