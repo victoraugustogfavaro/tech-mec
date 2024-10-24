@@ -15,13 +15,13 @@ function Card({ foto, nome, rm, git, linkedin, instagram }: CardProps) {
       <p>RM: {rm}</p>
       <div>
         <a href={git} target="blank">
-          <FontAwesomeIcon icon={faGithub} size="3x" />
+          <FontAwesomeIcon icon={faGithub} width={40} />
         </a>
         <a href={linkedin} target="blank">
-          <FontAwesomeIcon icon={faLinkedin} size="3x" />
+          <FontAwesomeIcon icon={faLinkedin} width={40} />
         </a>
         <a href={instagram} target="blank">
-          <FontAwesomeIcon icon={faInstagramSquare} size="3x" />
+          <FontAwesomeIcon icon={faInstagramSquare} width={40} />
         </a>
       </div>
     </section>

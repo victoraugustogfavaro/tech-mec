@@ -1,7 +1,11 @@
+import BannerHome from "@/components/Banner/BannerHome";
+
 function Home() {
-  <section>
-    
-  </section>;
+  return (
+    <section>
+      <BannerHome />
+    </section>
+  );
 }
 
 export default Home;

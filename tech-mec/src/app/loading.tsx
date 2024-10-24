@@ -2,9 +2,9 @@ import Spinner from "@/components/Spinner/Spinner";
 
 function Loading() {
   return (
-    <main>
+    <section>
       <Spinner />
-    </main>
+    </section>
   );
 }
 

@@ -9,7 +9,7 @@ function BannerHome() {
         asseguramos a saúde do seu automóvel{" "}
         <span>sem surpresas para seu bolso</span>.
       </h2>
-      <BotaoChatBot mensagem={"Assistente Virtual"} />
+      <BotaoChatBot mensagem={"Assistente Virtual"} position="banner" />
     </section>
   );
 }

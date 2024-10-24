@@ -1,5 +1,6 @@
-export interface BotaoChatBot{
+export interface BotaoChatBotProps{
   mensagem: string;
+  position: string
 }
 
 export type BannerProps = {
