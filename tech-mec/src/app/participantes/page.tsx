@@ -1,7 +1,5 @@
-function Participantes(){
-    <section>
-
-    </section>
+function Participantes() {
+  return <section></section>;
 }
 
-export default Participantes
+export default Participantes;

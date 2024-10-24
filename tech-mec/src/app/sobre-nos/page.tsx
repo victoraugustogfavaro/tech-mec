@@ -1,7 +1,5 @@
-function SobreNos(){
-    <section>
-
-    </section>
+function SobreNos() {
+  return <section></section>;
 }
 
-export default SobreNos
+export default SobreNos;

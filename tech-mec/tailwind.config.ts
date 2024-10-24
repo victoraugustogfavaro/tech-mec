@@ -15,6 +15,13 @@ const config: Config = {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
+      screens: {
+        'xs': '390px', 
+        'sm': '550px',
+        'md': '700px',
+        'lg': '1000px',
+        'xl': '1250px',
+      }
     },
   },
   plugins: [],

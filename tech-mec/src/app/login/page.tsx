@@ -1,7 +1,5 @@
 function Login() {
-  <section>
-
-  </section>;
+  return <section></section>;
 }
 
 export default Login;

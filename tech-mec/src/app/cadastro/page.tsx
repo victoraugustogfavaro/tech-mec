@@ -1,7 +1,5 @@
-function Cadastro(){
-    <section>
-
-    </section>
+function Cadastro() {
+  return <section></section>;
 }
 
-export default Cadastro
+export default Cadastro;
