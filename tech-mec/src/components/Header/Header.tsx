@@ -6,7 +6,7 @@ import MenuHeader from "../Menu/MenuHeader";
 
 function Header() {
   return (
-    <header className="flex justify-center items-center bg-roxoEscuro h-32 gap-6 md:justify-evenly">
+    <header className="flex justify-center items-center bg-roxoEscuro h-[125px] gap-6 md:justify-evenly xl:justify-between xl:px-[5%]">
       <Link href="/">
         <Image
           src={logo}

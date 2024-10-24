@@ -19,13 +19,13 @@ function Footer() {
           <Image
             src={logo}
             alt="Escrita em roxo com Logo circular entre dois textos Tech Mec"
-            className="transition-transform duration-500 ease-in-out hover:scale-110 w-[300px]"
+            className="transition-transform duration-500 ease-in-out hover:scale-110"
           />
         </Link>
         <p className="font-light">&copy; Copyright - 2024</p>
       </div>
-      <div className="flex flex-col items-center">
-        <p className="font-semibold">Acompanhe a Porto nas redes sociais</p>
+      <div className="flex flex-col items-center m-r-[45px]">
+        <p className="font-bold">Acompanhe a Porto nas redes sociais</p>
         <div className="flex gap-[5%] text-white">
           <a href="https://www.facebook.com/porto/?locale=pt_BR" target="blank">
             <FontAwesomeIcon

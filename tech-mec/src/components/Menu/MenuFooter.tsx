@@ -5,7 +5,7 @@ import BotaoChatBot from "../Botao/Botao";
 
 function MenuFooter() {
   return (
-    <nav className="flex flex-col gap-8 xs:flex-row xs:gap-12 sm:gap-28 lg:gap-12 xl:gap-20">
+    <nav className="flex flex-col gap-8 xs:flex-row xs:gap-12 sm:gap-28 lg:gap-14 xl:gap-[100px]">
       <ul className="">
         <li className="font-bold">Links Rápidos</li>
         <li className="flex transition-all duration-500 ease-in-out hover:text-roxoClaro">
