@@ -7,6 +7,7 @@ import {
   WebChatConfig,
 } from "@ibm-watson/assistant-web-chat-react";
 import { BotaoChatBotProps } from "@/types";
+import { usePathname } from "next/navigation";
 
 const webChatOptions: WebChatConfig = {
   integrationID: "814fa5a5-953a-482f-aee2-2cb5d9d87728",
@@ -17,9 +18,7 @@ const webChatOptions: WebChatConfig = {
 
 function BotaoChatBot({ mensagem, position }: BotaoChatBotProps) {
   const botaoRef = useRef<HTMLButtonElement>(null);
-  const [chatInstance, setChatInstance] = useState<WebChatInstance | null>(
-    null
-  );
+  const [chatInstance, setChatInstance] = useState<WebChatInstance | null>(null);
 
   const handleBeforeRender = async (
     instance: WebChatInstance
@@ -32,6 +31,14 @@ function BotaoChatBot({ mensagem, position }: BotaoChatBotProps) {
       chatInstance.toggleOpen();
     }
   }, [chatInstance]);
+
+  const pathname = usePathname();
+  const isLoginOrCadastro = pathname === "/login" || pathname === "/cadastro";
+
+  // Verifica se a rota é login ou cadastro e não renderiza o chat-bot nessas rotas
+  if (isLoginOrCadastro) {
+    return null;
+  }
 
   const buttonClass = (() => {
     switch (position) {

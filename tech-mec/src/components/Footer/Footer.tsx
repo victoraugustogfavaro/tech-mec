@@ -1,3 +1,5 @@
+"use client"
+
 import {
   faFacebookSquare,
   faInstagramSquare,
@@ -9,13 +11,16 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "../../images/logo2.png";
 import MenuFooter from "../Menu/MenuFooter";
+import { usePathname } from "next/navigation";
 
 function Footer() {
+  const pathname = usePathname();
+  const isLoginOrCadastro = pathname === "/login" || pathname === "/cadastro";
   return (
     <footer className="flex flex-col justify-center items-center bg-black text-white gap-5 h-auto p-6 lg:flex-row lg:justify-evenly">
       <MenuFooter />
       <div className="flex flex-col items-center">
-        <Link href="/">
+        <Link href={isLoginOrCadastro ? "" : "/"}>
           <Image
             src={logo}
             alt="Escrita em roxo com Logo circular entre dois textos Tech Mec"
@@ -24,20 +29,24 @@ function Footer() {
         </Link>
         <p className="font-light">&copy; Copyright - 2024</p>
       </div>
-      <div className="flex flex-col items-center m-r-[45px]">
+      <div
+        className={
+          isLoginOrCadastro ? "hidden" : "flex flex-col items-center m-r-[45px]"
+        }
+      >
         <p className="font-bold">Acompanhe a Porto nas redes sociais</p>
         <div className="flex gap-[5%] text-white">
           <a href="https://www.facebook.com/porto/?locale=pt_BR" target="blank">
             <FontAwesomeIcon
               icon={faFacebookSquare}
-              width={40}
+              size="3x"
               className="transition-transform duration-500 ease-in-out hover:scale-110 hover:text-roxoClaro"
             />
           </a>
           <a href="https://www.instagram.com/porto/" target="blank">
             <FontAwesomeIcon
               icon={faInstagramSquare}
-              width={40}
+              size="3x"
               className="transition-transform duration-500 ease-in-out hover:scale-110 hover:text-roxoClaro"
             />
           </a>
@@ -47,14 +56,14 @@ function Footer() {
           >
             <FontAwesomeIcon
               icon={faLinkedin}
-              width={40}
+              size="3x"
               className="transition-transform duration-500 ease-in-out hover:scale-110 hover:text-roxoClaro"
             />
           </a>
           <a href="https://www.youtube.com/portoseguro" target="blank">
             <FontAwesomeIcon
               icon={faSquareYoutube}
-              width={40}
+              size="3x"
               className="transition-transform duration-500 ease-in-out hover:scale-110 hover:text-roxoClaro"
             />
           </a>
