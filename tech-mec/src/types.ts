@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export interface BotaoChatBotProps{
   mensagem: string;
   position: string
@@ -8,7 +10,7 @@ export type BannerProps = {
 };
 
 export type CardProps = {
-  foto: string;
+  foto: string | StaticImageData;
   nome: string;
   rm: string;
   git: string;
