@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {
   faFacebookSquare,
@@ -15,12 +15,15 @@ import { usePathname } from "next/navigation";
 
 function Footer() {
   const pathname = usePathname();
-  const isLoginOrCadastro = pathname === "/login" || pathname === "/cadastro";
+  const linksHidden =
+    pathname !== "/" &&
+    pathname !== "/sobre-nos" &&
+    pathname !== "/participantes";
   return (
     <footer className="flex flex-col justify-center items-center bg-black text-white gap-5 h-auto p-6 lg:flex-row lg:justify-evenly">
       <MenuFooter />
       <div className="flex flex-col items-center">
-        <Link href={isLoginOrCadastro ? "" : "/"}>
+        <Link href={linksHidden ? "" : "/"}>
           <Image
             src={logo}
             alt="Escrita em roxo com Logo circular entre dois textos Tech Mec"
@@ -31,7 +34,7 @@ function Footer() {
       </div>
       <div
         className={
-          isLoginOrCadastro ? "hidden" : "flex flex-col items-center m-r-[45px]"
+          linksHidden ? "hidden" : "flex flex-col items-center"
         }
       >
         <p className="font-bold">Acompanhe a Porto nas redes sociais</p>
@@ -40,6 +43,7 @@ function Footer() {
             <FontAwesomeIcon
               icon={faFacebookSquare}
               size="3x"
+              width={40}
               className="transition-transform duration-500 ease-in-out hover:scale-110 hover:text-roxoClaro"
             />
           </a>
@@ -47,6 +51,7 @@ function Footer() {
             <FontAwesomeIcon
               icon={faInstagramSquare}
               size="3x"
+              width={40}
               className="transition-transform duration-500 ease-in-out hover:scale-110 hover:text-roxoClaro"
             />
           </a>
@@ -57,6 +62,7 @@ function Footer() {
             <FontAwesomeIcon
               icon={faLinkedin}
               size="3x"
+              width={40}
               className="transition-transform duration-500 ease-in-out hover:scale-110 hover:text-roxoClaro"
             />
           </a>
@@ -64,6 +70,7 @@ function Footer() {
             <FontAwesomeIcon
               icon={faSquareYoutube}
               size="3x"
+              width={40}
               className="transition-transform duration-500 ease-in-out hover:scale-110 hover:text-roxoClaro"
             />
           </a>
