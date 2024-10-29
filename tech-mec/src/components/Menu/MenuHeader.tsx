@@ -1,21 +1,26 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation"; 
+import { usePathname } from "next/navigation";
 
 function MenuHeader() {
   const pathname = usePathname();
-  const isLoginOrCadastro = pathname === "/login" || pathname === "/cadastro"
+  const hiddenLinks =
+  pathname !== "/" &&
+  pathname !== "/sobre-nos" &&
+  pathname !== "/participantes";
 
   return (
-    <nav className={isLoginOrCadastro ? "hidden" : "block"}>
-      <ul className="flex flex-col justify-center items-center gap-2 md:flex-row md:gap-8 lg:gap-[70px] xl:ml-[90px] xl:gap-24">
+    <nav className={hiddenLinks ? "hidden" : "block"}>
+      <ul className="flex flex-col justify-center items-center gap-2 md:flex-row md:gap-10 md:ml-[8px] lg:gap-[70px] lg:ml-[80px] xl:ml-[100px] xl:gap-20">
         <li>
           <Link
             href="/"
-            className={`text-white font-bold transition-all duration-500 ease-in-out hover:text-roxoClaro xl:p-7 ${
-              pathname === "/" ? "text-[#8572ff]" : ""
-            }`}
+            className={
+              pathname === "/"
+                ? "text-roxoClaro font-bold transition-all duration-500 ease-in-out xl:p-7"
+                : " text-white font-bold transition-all duration-500 ease-in-out hover:text-roxoClaro xl:p-7"
+            }
           >
             HOME
           </Link>
@@ -23,9 +28,11 @@ function MenuHeader() {
         <li>
           <Link
             href="/sobre-nos"
-            className={`text-white font-bold transition-all duration-500 ease-in-out hover:text-roxoClaro xl:p-7 ${
-              pathname === "/sobre-nos" ? "text-[#8572ff]" : ""
-            }`} 
+            className={
+              pathname === "/sobre-nos"
+                ? "text-roxoClaro font-bold transition-all duration-1000 ease-in-out xl:p-7"
+                : " text-white font-bold transition-all duration-500 ease-in-out hover:text-roxoClaro xl:p-7"
+            }
           >
             SOBRE NÓS
           </Link>
@@ -33,9 +40,11 @@ function MenuHeader() {
         <li>
           <Link
             href="/participantes"
-            className={`text-white font-bold transition-all duration-500 ease-in-out hover:text-roxoClaro xl:p-7 ${
-              pathname === "/participantes" ? "text-[#8572ff]" : ""
-            }`} 
+            className={
+              pathname === "/participantes"
+                ? "text-roxoClaro font-bold transition-all duration-500 ease-in-out xl:p-7"
+                : " text-white font-bold transition-all duration-500 ease-in-out hover:text-roxoClaro xl:p-7"
+            }
           >
             PARTICIPANTES
           </Link>
