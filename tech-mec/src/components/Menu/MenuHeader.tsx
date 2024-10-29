@@ -12,7 +12,7 @@ function MenuHeader() {
 
   return (
     <nav className={hiddenLinks ? "hidden" : "block"}>
-      <ul className="flex flex-col justify-center items-center gap-2 md:flex-row md:gap-10 md:ml-[8px] lg:gap-[70px] lg:ml-[80px] xl:ml-[100px] xl:gap-20">
+      <ul className="flex flex-col justify-center items-center gap-2 md:flex-row md:gap-10 md:ml-[8px] lg:gap-[70px] lg:ml-[85px] xl:gap-20">
         <li>
           <Link
             href="/"
