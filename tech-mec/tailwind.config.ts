@@ -16,16 +16,18 @@ const config: Config = {
         inter: ["Inter", "sans-serif"],
       },
       screens: {
-        'xs': '390px', 
-        'sm': '550px',
-        'md': '710px',
-        'lg': '1100px',
-        'xl': '1250px',
-        'xxl': '1400px'
+        xs: "390px",
+        sm: "550px",
+        md: "710px",
+        lg: "1100px",
+        xl: "1250px",
+        xxl: "1400px",
       },
       backgroundImage: {
-        'gradientRoxo': 'linear-gradient(to bottom, #151F42 30%, #7569C9 100%)',
-      }
+        gradientRoxo: "linear-gradient(to bottom, #151F42 30%, #7569C9 100%)",
+        gradientCadastroLogin:
+          "linear-gradient(to bottom, #151F42 20%, #7569C9 100%)",
+      },
     },
   },
   plugins: [],

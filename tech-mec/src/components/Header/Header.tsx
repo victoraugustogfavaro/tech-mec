@@ -27,7 +27,7 @@ function Header() {
           alt="Logo circular roxa, simbolizando a TechMec"
           className={
             hiddenLinks
-              ? "ml-[10px] transition-transform duration-500 ease-in-out hover:scale-110"
+              ? "transition-transform duration-500 ease-in-out hover:scale-110"
               : "transition-transform duration-500 ease-in-out hover:scale-125 min-w-24"
           }
         />

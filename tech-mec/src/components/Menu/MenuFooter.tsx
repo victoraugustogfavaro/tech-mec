@@ -18,19 +18,19 @@ function MenuFooter() {
           : "flex flex-col gap-8 xs:flex-row xs:gap-12 sm:gap-28 lg:gap-14 xl:gap-[90px]"
       }
     >
-      <ul className="">
+      <ul>
         <li className="font-bold">Links Rápidos</li>
         <li className="flex transition-all duration-500 ease-in-out hover:text-roxoClaro">
           <FontAwesomeIcon
             icon={faChevronRight}
-            className="mx-1 mt-1"
+            className="mx-1 mt-1 text-xs"
           />
           <BotaoChatBot mensagem={"Mêcanico Virtual"} position="footer" />
         </li>
         <li className="flex transition-all duration-500 ease-in-out hover:text-roxoClaro">
           <FontAwesomeIcon
             icon={faChevronRight}
-            className="mx-1 mt-1"
+            className="mx-1 mt-1 text-xs"
           />
           <Link href="/participantes"> Participantes</Link>
         </li>
@@ -41,14 +41,14 @@ function MenuFooter() {
         <li className="flex transition-all duration-500 ease-in-out hover:text-roxoClaro">
           <FontAwesomeIcon
             icon={faChevronRight}
-            className="mx-1 mt-1"
+            className="mx-1 mt-1 text-xs"
           />
           <Link href="/sobre-nos"> Quem Somos?</Link>
         </li>
         <li className="flex transition-all duration-500 ease-in-out hover:text-roxoClaro">
           <FontAwesomeIcon
             icon={faChevronRight}
-            className="mx-1 mt-1"
+            className="mx-1 mt-1 text-xs"
           />
           <Link href="/sobre-nos"> Nossa História </Link>
         </li>

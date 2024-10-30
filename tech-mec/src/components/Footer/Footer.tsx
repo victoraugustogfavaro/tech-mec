@@ -22,7 +22,13 @@ function Footer() {
   return (
     <footer className="flex flex-col justify-center items-center bg-black text-white gap-5 h-auto p-6 lg:flex-row lg:justify-evenly">
       <MenuFooter />
-      <div className="flex flex-col items-center xl:mr-8">
+      <div
+        className={
+          linksHidden
+            ? "flex flex-col items-center"
+            : "flex flex-col items-center xl:mr-8"
+        }
+      >
         <Link href={linksHidden ? "" : "/"}>
           <Image
             src={logo}
