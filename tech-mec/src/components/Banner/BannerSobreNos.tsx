@@ -3,7 +3,7 @@ import logo from "../../images/logo.svg";
 
 function BannerSobreNos() {
   return (
-    <section className="flex flex-col bg-gradienteRoxo text-white leading-tight text-center h-auto gap-6 p-2 justify-center items-center md:gap-10 xl:flex-row xl:text-left xl:justify-evenly xl:p-1 xl:gap-0">
+    <section className="flex flex-col bg-gradientRoxo text-white text-center h-auto gap-6 p-2 justify-center items-center md:gap-10 xl:flex-row xl:text-left xl:justify-evenly xl:p-1 xl:gap-0">
       <div className="flex flex-col justify-center gap-4 md:w-[600px] xl:w-[400px] xl:ml-5">
         <h1 className="font-bold text-[2rem] xl:text-[2.375rem]">
           Inovando o presente, dirigindo o futuro.

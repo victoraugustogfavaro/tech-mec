@@ -32,27 +32,19 @@ function Footer() {
         </Link>
         <p className="font-light">&copy; Copyright - 2024</p>
       </div>
-      <div
-        className={
-          linksHidden ? "hidden" : "flex flex-col items-center"
-        }
-      >
+      <div className={linksHidden ? "hidden" : "flex flex-col items-center"}>
         <p className="font-bold">Acompanhe a Porto nas redes sociais</p>
         <div className="flex gap-[5%] text-white">
           <a href="https://www.facebook.com/porto/?locale=pt_BR" target="blank">
             <FontAwesomeIcon
               icon={faFacebookSquare}
-              size="3x"
-              width={40}
-              className="transition-transform duration-500 ease-in-out hover:scale-110 hover:text-roxoClaro"
+              className="transition-transform duration-500 ease-in-out hover:scale-110 hover:text-roxoClaro text-[50px]"
             />
           </a>
           <a href="https://www.instagram.com/porto/" target="blank">
             <FontAwesomeIcon
               icon={faInstagramSquare}
-              size="3x"
-              width={40}
-              className="transition-transform duration-500 ease-in-out hover:scale-110 hover:text-roxoClaro"
+              className="transition-transform duration-500 ease-in-out hover:scale-110 hover:text-roxoClaro text-[50px]"
             />
           </a>
           <a
@@ -61,17 +53,13 @@ function Footer() {
           >
             <FontAwesomeIcon
               icon={faLinkedin}
-              size="3x"
-              width={40}
-              className="transition-transform duration-500 ease-in-out hover:scale-110 hover:text-roxoClaro"
+              className="transition-transform duration-500 ease-in-out hover:scale-110 hover:text-roxoClaro text-[50px]"
             />
           </a>
           <a href="https://www.youtube.com/portoseguro" target="blank">
             <FontAwesomeIcon
               icon={faSquareYoutube}
-              size="3x"
-              width={40}
-              className="transition-transform duration-500 ease-in-out hover:scale-110 hover:text-roxoClaro"
+              className="transition-transform duration-500 ease-in-out hover:scale-110 hover:text-roxoClaro text-[50px]"
             />
           </a>
         </div>

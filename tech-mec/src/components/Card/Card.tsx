@@ -9,19 +9,32 @@ import Image from "next/image";
 
 function Card({ foto, nome, rm, git, linkedin, instagram }: CardProps) {
   return (
-    <section>
-      <Image src={foto} alt={nome} />
-      <p>{nome}</p>
-      <p>RM: {rm}</p>
+    <section className=" w-[280px] h-[400px] flex flex-col justify-center items-center bg-white rounded-[20%] xs:w-[320px] xs:h-[450px] ">
+      <Image
+        src={foto}
+        alt={nome}
+        className="w-[250px] h-[250px] rounded-full"
+      />
+      <p className="mt-[10px] text-[1.6rem] font-bold">{nome}</p>
+      <p className="text-roxoClaro font-bold text-[1.2rem]">RM: {rm}</p>
       <div>
         <a href={git} target="blank">
-          <FontAwesomeIcon icon={faGithub} width={40} />
+          <FontAwesomeIcon
+            icon={faGithub}
+            className="m-[2px] transition-all duration-500 ease-in-out hover:text-roxoClaro hover:scale-110 text-[50px]"
+          />
         </a>
         <a href={linkedin} target="blank">
-          <FontAwesomeIcon icon={faLinkedin} width={40} />
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            className="m-[2px] transition-all duration-500 ease-in-out hover:text-roxoClaro hover:scale-110 text-[50px]"
+          />
         </a>
         <a href={instagram} target="blank">
-          <FontAwesomeIcon icon={faInstagramSquare} width={40} />
+          <FontAwesomeIcon
+            icon={faInstagramSquare}
+            className="m-[2px] transition-all duration-500 ease-in-out hover:text-roxoClaro hover:scale-110 text-[50px]"
+          />
         </a>
       </div>
     </section>

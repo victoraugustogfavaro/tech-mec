@@ -2,7 +2,7 @@ import BotaoChatBot from "../Botao/Botao";
 
 function BannerHome() {
   return (
-    <section className="h-[420px] p-4 gap-5 md:h-[300px] md:gap-4 bg-gradienteRoxo text-white text-center flex flex-col justify-center items-center leading-tight">
+    <section className="h-[420px] p-4 gap-5 md:h-[300px] md:gap-4 bg-gradientRoxo text-white text-center flex flex-col justify-center items-center">
       <h1 className="w-[300px] text-[2.375rem] font-extrabold md:w-[520px]">
         O lugar para quem gosta de cuidar do carro.
       </h1>

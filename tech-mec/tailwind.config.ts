@@ -24,7 +24,7 @@ const config: Config = {
         'xxl': '1400px'
       },
       backgroundImage: {
-        'gradienteRoxo': 'linear-gradient(to bottom, #151F42 30%, #7569C9 100%)',
+        'gradientRoxo': 'linear-gradient(to bottom, #151F42 30%, #7569C9 100%)',
       }
     },
   },

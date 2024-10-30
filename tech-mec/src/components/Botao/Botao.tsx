@@ -18,7 +18,9 @@ const webChatOptions: WebChatConfig = {
 
 function BotaoChatBot({ mensagem, position }: BotaoChatBotProps) {
   const botaoRef = useRef<HTMLButtonElement>(null);
-  const [chatInstance, setChatInstance] = useState<WebChatInstance | null>(null);
+  const [chatInstance, setChatInstance] = useState<WebChatInstance | null>(
+    null
+  );
 
   const handleBeforeRender = async (
     instance: WebChatInstance
@@ -33,21 +35,23 @@ function BotaoChatBot({ mensagem, position }: BotaoChatBotProps) {
   }, [chatInstance]);
 
   const pathname = usePathname();
-  const isLoginOrCadastro = pathname === "/login" || pathname === "/cadastro";
+  const hidddenLinks =
+    pathname !== "/" &&
+    pathname !== "/sobre-nos" &&
+    pathname !== "/participantes";
 
-  // Verifica se a rota é login ou cadastro e não renderiza o chat-bot nessas rotas
-  if (isLoginOrCadastro) {
+  if (hidddenLinks) {
     return null;
   }
 
   const buttonClass = (() => {
     switch (position) {
       case "header":
-        return "hidden xs:block xs:txt-[0.8rem] sm:txt-[1.125rem] bg-roxoClaro text-white border-none cursor-pointer rounded-lg h-[75px]  w-[200px] px-2 font-bold transition-all duration-500 ease-in-out hover:scale-110 hover:bg-white hover:text-roxoEscuro";
+        return "hidden xs:block xs:text-[1rem] sm:text-[1.125rem] bg-roxoClaro text-white border-none cursor-pointer rounded-lg h-[75px]  w-[200px] px-2 font-bold transition-all duration-500 ease-in-out hover:scale-110 hover:bg-white hover:text-roxoEscuro";
       case "banner":
         return "bg-white text-roxoClaro border-none cursor-pointer rounded-lg w-[200px] h-[55px] text-[1.125rem] font-semibold transition-all duration-500 ease-in-out hover:scale-110 hover:bg-roxoEscuro hover:text-white";
       case "engrenaldo":
-        return "bg-white text-roxoClaro border-none cursor-pointer text-[1.2rem] font-semibold transition-all duration-500 ease-in-out hover:underline hover:text-[1.3rem]";
+        return "bg-white text-roxoClaro border-none cursor-pointer text-[1.2rem] font-semibold transition-all duration-500 ease-in-out hover:underline";
       case "footer":
         return "text-white bg-black border-none cursor-pointer transition-all duration-500 ease-in-out text-[16px] hover:text-roxoClaro";
     }

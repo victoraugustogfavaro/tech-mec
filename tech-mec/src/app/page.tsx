@@ -5,7 +5,7 @@ function Home() {
   return (
     <section>
       <BannerHome />
-      <div className={"w-[70%] my-[4%] mx-auto leading-tight"}>
+      <div className={"w-[70%] my-[4%] mx-auto"}>
         <h2 className={"text-roxoClaro mt-[30px] text-[1.7rem] font-bold"}>
           Bem-vindo à sua oficina automotiva de confiança!
         </h2>
