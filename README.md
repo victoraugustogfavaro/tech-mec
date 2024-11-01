@@ -1,9 +1,10 @@
 # TechMec
 
-Este é um projeto de website de uma oficina automotiva fictícia, desenvolvido para o trabalho de faculdade visando resolver o problema apresentado no challenge. O site é uma extensão da Porto e foi criado utilizando **React** e **TypeScript** com o objetivo de apresentar a oficina, um pouco sobre nós, e o mais importante: um **Assistente Virtual** capaz de realizar pré-diagnósticos, pré-orçamentos e agendamentos.
+Este é um projeto de website de uma oficina automotiva fictícia, desenvolvido para o trabalho de faculdade visando resolver o problema apresentado no challenge. O site é uma extensão da Porto e foi criado utilizando **Next.js** e **TypeScript** com o objetivo de apresentar a oficina, um pouco sobre nós, e o mais importante: um **Assistente Virtual** capaz de realizar pré-diagnósticos, pré-orçamentos e agendamentos.
 
 ## Funcionalidades
 
+- Páginas de Login e Cadastro do usuário
 - Página inicial que apresenta os serviços da oficina.
 - Página "Sobre Nós" que detalha a equipe e a história da oficina.
 - Assistente Virtual para auxiliar com diagnósticos e agendamentos.
@@ -11,6 +12,8 @@ Este é um projeto de website de uma oficina automotiva fictícia, desenvolvido 
 
 ## Páginas do Projeto
 
+- **Login**
+- **Cadastro**
 - **Home**
 - **Sobre Nós**
 - **Participantes**
@@ -18,11 +21,10 @@ Este é um projeto de website de uma oficina automotiva fictícia, desenvolvido 
 
 ## Tecnologias Utilizadas
 
-- **React** (Biblioteca de interface de usuário)
+- **Next.js** (Framework de React)
 - **TypeScript** (Linguagem de programação tipada)
-- **React Router Dom** (Para gerenciar as rotas)
 - **IBM Watson Assistant** (Assistente Virtual)
-- **CSS Modules** (Estilização modular)
+- **Tailwind** (Estilização)
 - **FontAwesome** (Ícones)
 - **Git** (Controle de versão)
 
@@ -30,39 +32,43 @@ Este é um projeto de website de uma oficina automotiva fictícia, desenvolvido 
 
 Certifique-se de ter o **Node.js** instalado em sua máquina. O projeto utiliza **npm** para gerenciamento de pacotes.
 
-### Passos para Instalação:
+### Passos para Instalação e Inicialização do projeto:
 
-1. Clone o repositório:
+1. Siga os passos do READ.ME da API de Java antes de seguir com os outros daqui:
+
+- Repositório: https://github.com/jenniesuzuki/java-sprint4
+
+2. Clone o repositório:
 
    ```bash
    git clone https://github.com/victoraugustogfavaro/tech-mec.git
 
    ```
 
-2. Navegue até a pasta do projeto:
+3. Navegue até a pasta do projeto:
 
    ```bash
    cd tech-mec
 
    ```
 
-3. Instale as dependências:
+4. Instale as dependências:
 
    ```bash
    npm install
 
    ```
 
-4. Rode o projeto localmente:
+5. Rode o projeto localmente (certifique-se de que a API de java também esteja rodando):
 
    ```bash
    npm run dev
 
    ```
 
-5. Clique no link disponibilizado no terminal, normalmente:
+6. Clique no link disponibilizado no terminal, normalmente:
 
-- http://localhost:5174
+- http://localhost:algumaporta
 
 ## Repositório
 
@@ -88,4 +94,8 @@ Certifique-se de ter o **Node.js** instalado em sua máquina. O projeto utiliza 
 
 ## Vídeo
 
-- Link: https://drive.google.com/file/d/1Kz90Z9hFTgsgbK_v1TSAp6qY9hO6u-be/view?usp=sharing
+- Link: ...
+
+## Site na Vercel
+
+- Link: ...
