@@ -17,3 +17,15 @@ export type CardProps = {
   linkedin: string;
   instagram: string;
 };
+
+export type UsuarioCadastro = {
+  nome: string
+  cpf: string
+  telefone: string
+  senha: string
+}
+
+export type UsuarioLogin = {
+  cpf: string
+  senha: string
+}
