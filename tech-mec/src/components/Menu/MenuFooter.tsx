@@ -1,36 +1,60 @@
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
-import styles from "../../styles/components/MenuFooter.module.css";
+import Link from "next/link";
 import BotaoChatBot from "../Botao/Botao";
+import { usePathname } from "next/navigation";
 
 function MenuFooter() {
+  const pathname = usePathname();
+  const hiddenLinks =
+    pathname !== "/" &&
+    pathname !== "/sobre-nos" &&
+    pathname !== "/participantes";
   return (
-    <nav className={styles.menus}>
-      <ul className={styles.menu}>
-        <li className={styles.titulo}>Links Rápidos</li>
-        <li className={styles.links}>
-        <FontAwesomeIcon icon={faChevronRight} />{" "}
+    <nav
+      className={
+        hiddenLinks
+          ? "hidden"
+          : "flex flex-col gap-8 xs:flex-row xs:gap-12 sm:gap-28 lg:gap-14 xl:gap-[90px]"
+      }
+    >
+      <ul>
+        <li className="font-bold">Links Rápidos</li>
+        <li className="flex transition-all duration-500 ease-in-out hover:text-roxoClaro">
+          <FontAwesomeIcon
+            icon={faChevronRight}
+            className="mx-1 mt-1"
+            width={10}
+          />
           <BotaoChatBot mensagem={"Mêcanico Virtual"} position="footer" />
         </li>
-        <li>
-          <Link to="/participantes" className={styles.links}>
-            <FontAwesomeIcon icon={faChevronRight} /> Participantes
-          </Link>
+        <li className="flex transition-all duration-500 ease-in-out hover:text-roxoClaro">
+          <FontAwesomeIcon
+            icon={faChevronRight}
+            className="mx-1 mt-1"
+            width={10}
+          />
+          <Link href="/participantes"> Participantes</Link>
         </li>
       </ul>
 
-      <ul className={styles.menu}>
-        <li className={styles.titulo}>Sobre Nós</li>
-        <li>
-          <Link to="/sobre-nos" className={styles.links}>
-            <FontAwesomeIcon icon={faChevronRight} /> Quem Somos?
-          </Link>
+      <ul>
+        <li className="font-bold">Sobre Nós</li>
+        <li className="flex transition-all duration-500 ease-in-out hover:text-roxoClaro">
+          <FontAwesomeIcon
+            icon={faChevronRight}
+            className="mx-1 mt-1"
+            width={10}
+          />
+          <Link href="/sobre-nos"> Quem Somos?</Link>
         </li>
-        <li>
-          <Link to="/sobre-nos" className={styles.links}>
-            <FontAwesomeIcon icon={faChevronRight} /> Nossa História
-          </Link>
+        <li className="flex transition-all duration-500 ease-in-out hover:text-roxoClaro">
+          <FontAwesomeIcon
+            icon={faChevronRight}
+            className="mx-1 mt-1"
+            width={10}
+          />
+          <Link href="/sobre-nos"> Nossa História </Link>
         </li>
       </ul>
     </nav>

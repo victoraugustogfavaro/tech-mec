@@ -1,25 +1,19 @@
+"use client";
+
 import { useCallback, useRef, useState } from "react";
 import {
   WebChatContainer,
   WebChatInstance,
   WebChatConfig,
 } from "@ibm-watson/assistant-web-chat-react";
-import { BotaoChatBotProps } from "../../types";
-import styles from "../../styles/components/Botao.module.css";
+import { BotaoChatBotProps } from "@/types";
+import { usePathname } from "next/navigation";
 
-// Definindo o tipo corretamente para o webChatOptions
 const webChatOptions: WebChatConfig = {
   integrationID: "814fa5a5-953a-482f-aee2-2cb5d9d87728",
-  region: "us-south", // Valor corretamente tipado
+  region: "us-south",
   serviceInstanceID: "8a23610e-7cde-411e-98a0-a2a5e0839572",
   locale: "pt-br",
-};
-
-const classMap: Record<string, string> = {
-  header: styles.botaoCabecalho,
-  banner: styles.botaoBanner,
-  engrenaldo: styles.botaoEngrenaldo,
-  footer: styles.botaoFooter,
 };
 
 function BotaoChatBot({ mensagem, position }: BotaoChatBotProps) {
@@ -28,7 +22,6 @@ function BotaoChatBot({ mensagem, position }: BotaoChatBotProps) {
     null
   );
 
-  // A função agora é async e retorna uma Promise<void>
   const handleBeforeRender = async (
     instance: WebChatInstance
   ): Promise<void> => {
@@ -41,7 +34,26 @@ function BotaoChatBot({ mensagem, position }: BotaoChatBotProps) {
     }
   }, [chatInstance]);
 
-  const buttonClass = classMap[position || ""] || styles.botaoPadrao;
+  const pathname = usePathname();
+  const hidddenLinks =
+    pathname !== "/" &&
+    pathname !== "/sobre-nos" &&
+    pathname !== "/participantes";
+
+  if (hidddenLinks) {
+    return null;
+  }
+
+  const buttonClass = (() => {
+    switch (position) {
+      case "banner":
+        return "bg-white text-roxoClaro border-none cursor-pointer rounded-lg w-[200px] h-[55px] text-[1.125rem] font-semibold transition-all duration-500 ease-in-out hover:scale-110 hover:bg-roxoEscuro hover:text-white";
+      case "engrenaldo":
+        return "bg-white text-roxoClaro border-none cursor-pointer text-[1.2rem] font-semibold transition-all duration-500 ease-in-out hover:underline";
+      case "footer":
+        return "text-white bg-black border-none cursor-pointer transition-all duration-500 ease-in-out text-[16px] hover:text-roxoClaro";
+    }
+  })();
 
   return (
     <>

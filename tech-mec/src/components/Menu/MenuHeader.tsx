@@ -1,60 +1,55 @@
-import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import styles from "../../styles/components/MenuHeader.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 function MenuHeader() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const location = useLocation();
-
-  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
+  const pathname = usePathname();
+  const hiddenLinks =
+  pathname !== "/" &&
+  pathname !== "/sobre-nos" &&
+  pathname !== "/participantes";
 
   return (
-    <nav>
-      <button className={styles.hamburger} onClick={toggleMenu}>
-        <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
-      </button>
-      <div className={isMenuOpen ? styles.divMenu : ""}>
-        <hr
-          className={isMenuOpen ? styles.separadorActive : styles.separador}
-        ></hr>
-        <ul className={`${styles.menu} ${isMenuOpen ? styles.menuOpen : ""}`}>
-          <li>
-            <Link
-              to="/"
-              className={`${styles.links} ${
-                location.pathname === "/" ? styles.linkAtivo : ""
-              }`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              HOME
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/sobre-nos"
-              className={`${styles.links} ${
-                location.pathname === "/sobre-nos" ? styles.linkAtivo : ""
-              }`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              SOBRE NÓS
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/participantes"
-              className={`${styles.links} ${
-                location.pathname === "/participantes" ? styles.linkAtivo : ""
-              }`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              PARTICIPANTES
-            </Link>
-          </li>
-        </ul>
-      </div>
+    <nav className={hiddenLinks ? "hidden" : "block"}>
+      <ul className="flex flex-col justify-center items-center gap-2 md:flex-row md:gap-10 md:ml-[8px] lg:gap-[70px] lg:ml-[95px] xl:gap-20">
+        <li>
+          <Link
+            href="/"
+            className={
+              pathname === "/"
+                ? "text-roxoClaro font-bold transition-all duration-500 ease-in-out xl:p-7"
+                : " text-white font-bold transition-all duration-500 ease-in-out hover:text-roxoClaro xl:p-7"
+            }
+          >
+            HOME
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/sobre-nos"
+            className={
+              pathname === "/sobre-nos"
+                ? "text-roxoClaro font-bold transition-all duration-1000 ease-in-out xl:p-7"
+                : " text-white font-bold transition-all duration-500 ease-in-out hover:text-roxoClaro xl:p-7"
+            }
+          >
+            SOBRE NÓS
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/participantes"
+            className={
+              pathname === "/participantes"
+                ? "text-roxoClaro font-bold transition-all duration-500 ease-in-out xl:p-7"
+                : " text-white font-bold transition-all duration-500 ease-in-out hover:text-roxoClaro xl:p-7"
+            }
+          >
+            PARTICIPANTES
+          </Link>
+        </li>
+      </ul>
     </nav>
   );
 }
