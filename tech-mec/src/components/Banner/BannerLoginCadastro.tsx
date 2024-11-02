@@ -14,14 +14,16 @@ function BannerLoginCadastro() {
         <li>
           <FontAwesomeIcon
             icon={faChevronRight}
-            className="mx-1 mt-1 text-xs"
+            className="mx-1 mt-1"
+            width={10}
           />
           Suporte 24 horas
         </li>
         <li>
           <FontAwesomeIcon
             icon={faChevronRight}
-            className="mx-1 mt-1 text-xs"
+            className="mx-1 mt-1"
+            width={10}
           />
           Pré-orçamentos e pré-diagnósticos
         </li>
@@ -29,7 +31,8 @@ function BannerLoginCadastro() {
           {" "}
           <FontAwesomeIcon
             icon={faChevronRight}
-            className="mx-1 mt-1 text-xs"
+            className="mx-1 mt-1"
+            width={10}
           />
           Melhor agilidade e acertividade
         </li>

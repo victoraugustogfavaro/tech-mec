@@ -69,14 +69,14 @@ function FormularioLogin() {
     };
 
     try {
-      const response = await fetch("http://localhost:8080/techmec/login", {
+      const response = await fetch("http://localhost:8080/techmec/clientes/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(usuarioFormatado),
       });
 
       if (response.ok) {
-        alert("Login realizado com sucesso.");
+        alert("Login realizado com sucesso, seja bem-vindo!");
 
         // Gera e armazena o token no localStorage
         const token = gerarToken();

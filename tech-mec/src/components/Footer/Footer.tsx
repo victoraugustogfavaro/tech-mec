@@ -59,7 +59,7 @@ function Footer() {
           >
             <FontAwesomeIcon
               icon={faLinkedin}
-              className="transition-transform duration-500 ease-in-out hover:scale-110 hover:text-roxoClaro text-[50px]"
+              className="transition-transform duration-500 ease-in-out hover:scale-110 hover:text-roxoClaro text-[50px] "
             />
           </a>
           <a href="https://www.youtube.com/portoseguro" target="blank">

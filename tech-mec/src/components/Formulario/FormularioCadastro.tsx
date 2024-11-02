@@ -22,7 +22,8 @@ function FormularioCadastro() {
     senha: "",
   });
 
-  const validarNome = (nome: string) => /^[A-Za-z\s]+$/.test(nome);
+  // Atualização para aceitar acentuação
+  const validarNome = (nome: string) => /^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/.test(nome);
   const validarCPF = (cpf: string) => cpf.length === 11 && /^\d+$/.test(cpf);
   const validarTelefone = (telefone: string) =>
     telefone.length === 11 && /^\d+$/.test(telefone);

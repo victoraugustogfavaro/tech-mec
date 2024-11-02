@@ -46,8 +46,6 @@ function BotaoChatBot({ mensagem, position }: BotaoChatBotProps) {
 
   const buttonClass = (() => {
     switch (position) {
-      case "header":
-        return "hidden xs:block xs:text-[1rem] sm:text-[1.125rem] bg-roxoClaro text-white border-none cursor-pointer rounded-lg h-[75px]  w-[200px] px-2 font-bold transition-all duration-500 ease-in-out hover:scale-110 hover:bg-white hover:text-roxoEscuro";
       case "banner":
         return "bg-white text-roxoClaro border-none cursor-pointer rounded-lg w-[200px] h-[55px] text-[1.125rem] font-semibold transition-all duration-500 ease-in-out hover:scale-110 hover:bg-roxoEscuro hover:text-white";
       case "engrenaldo":
